@@ -11,16 +11,12 @@ public class Main
 {
   public static void main(String[] args) throws ParseException, UnsupportedLookAndFeelException
   {
+    setUpLookAndFeel();
 
-        setUpLookAndFeel();
-
-//    LookAndFeelHandler.getInstance().setupSyntheticaLF();
-
-    final JFrame testFrame = new JFrame("Gayan Perera, (Gayan), Central administrator*The Orthopedic department*");
+    final JFrame testFrame = new JFrame("Zulu Test User, (TUser), Test Working Role*The Test Department*");
 
     testFrame.setSize(new Dimension(600, 400));
     testFrame.setVisible(true);
-
   }
 
   private static void setUpLookAndFeel() throws UnsupportedLookAndFeelException, ParseException
