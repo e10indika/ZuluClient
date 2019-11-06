@@ -1,0 +1,66 @@
+<synth>
+	<!--
+	==============================================================================================================================================
+	 Default Styles
+	==============================================================================================================================================
+	 -->
+	<style id="default">
+		<object id="graphicsUtils" class="de.javasoft.plaf.synthetica.aluoxide.GraphicsUtils"/>
+		<graphicsUtils idref="graphicsUtils"/>
+
+		<object id="syntheticaPainter" class="de.javasoft.plaf.synthetica.painter.SyntheticaPainter"/>
+		<state>
+			<!-- font id="SyntheticaDefaultFont" name="Segoe UI" size="12"/>  -->
+			<font id="SyntheticaDefaultFont" name="Dialog" size="12"/>
+			<color type="FOREGROUND" value="#222222"/>
+		</state>
+
+		<state value="DISABLED">
+			<color type="TEXT_FOREGROUND" value="#A0A0A0"/>
+		</state>
+		<state value="SELECTED">
+			<font name="Dialog" size="12" style="BOLD" />
+		</state>
+
+		<defaultsProperty key="Synthetica.window.decoration" type="boolean" value="true"/>
+		<defaultsProperty key="Synthetica.window.opaque" type="boolean" value="true"/>
+		<defaultsProperty key="Synthetica.animation.enabled" type="boolean" value="true"/>
+		<defaultsProperty key="Synthetica.window.shape" type="string"
+											value="de.javasoft.plaf.synthetica.aluoxide.WindowShape"/>
+		<defaultsProperty key="Synthetica.cellRenderer.respectFocus" type="boolean" value="false"/>
+		<defaultsProperty key="Synthetica.cellRenderer.selectionBackground.enabled" type="boolean" value="true"/>
+		<defaultsProperty key="Synthetica.background.alpha" type="integer" value="20"/>
+		<defaultsProperty key="Synthetica.rootPane.titlePane.title.center" type="boolean" value="false"/>
+		<defaultsProperty key="Synthetica.font.disabled" type="boolean" value="true"/>
+		<defaultsProperty key="Synthetica.showMnemonicsOnAltKeyOnly" type="boolean" value="false"/>
+		<!-- File Chooser MTEI-308 FilChooser Dialog does not appear in the Correct Monitor in Multi-Monitor Env. So, Need to set the following property  -->
+		<defaultsProperty key="Synthetica.extendedFileChooser.rememberPreferences" type="boolean" value="false"/>
+	</style>
+	<bind style="default" type="region" key=".*"/>
+
+
+	<style id="rootPane">
+
+
+		<string id="rootPaneBorder">/images/rootPaneBorder.png</string>
+		<defaultsProperty key="Synthetica.rootPane.border" type="idref" value="rootPaneBorder"/>
+
+		<string id="rootPaneBorderSelected">/images/rootPaneBorder_selected.png</string>
+		<defaultsProperty key="Synthetica.rootPane.border.selected" type="idref" value="rootPaneBorderSelected"/>
+		<string id="rootPaneBorderLightSelected">/images/rootPaneBorder_selected.png</string>
+		<defaultsProperty key="Synthetica.rootPane.border.light.selected" type="idref" value="rootPaneBorderLightSelected"/>
+
+		<defaultsProperty key="Synthetica.rootPane.border.insets" type="insets" value="150 8 8 8"/>
+		<defaultsProperty key="Synthetica.rootPane.border.size" type="insets" value="3 3 3 3"/>
+		<defaultsProperty key="Synthetica.rootPane.resizeInsets" type="insets" value="8 8 8 8"/>
+
+		<defaultsProperty key="Synthetica.rootPane.titlePane.gap" type="integer" value="4"/>
+		<defaultsProperty key="Synthetica.rootPane.titlePane.title.insets" type="insets" value="2 0 2 0"/>
+
+		<defaultsProperty key="Synthetica.rootPane.titlePane.menuButton.insets" type="insets" value="2 2 4 0"/>
+		<defaultsProperty key="Synthetica.rootPane.titlePane.iconifyButton.insets" type="insets" value="2 0 4 0"/>
+		<defaultsProperty key="Synthetica.rootPane.titlePane.toggleButton.insets" type="insets" value="2 0 4 0"/>
+		<defaultsProperty key="Synthetica.rootPane.titlePane.closeButton.insets" type="insets" value="2 0 4 2"/>
+	</style>
+
+</synth>
