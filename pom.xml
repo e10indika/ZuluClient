@@ -17,6 +17,19 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<!-- Build an executable JAR -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>Main.class</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -26,30 +39,5 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<dependency>
-			<groupId>se.cambio.cosmic.spider</groupId>
-			<artifactId>CosmicLF</artifactId>
-			<version>2.1.1-dev-SNAPSHOT</version>
-		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>se.cambio.cosmic.spider</groupId>-->
-<!--			<artifactId>CDE</artifactId>-->
-<!--			<version>5.3.0</version>-->
-<!--		</dependency>-->
-		<dependency>
-			<groupId>se.cambio.external.de.javasoft</groupId>
-			<artifactId>synthetica</artifactId>
-			<version>2.18.0</version>
-		</dependency>
-		<dependency>
-			<groupId>se.cambio.external.de.javasoft</groupId>
-			<artifactId>syntheticaAddons</artifactId>
-			<version>1.8.1</version>
-		</dependency>
-		<dependency>
-			<groupId>se.cambio.external.de.javasoft</groupId>
-			<artifactId>syntheticaAluOxide</artifactId>
-			<version>2.18.0</version>
-		</dependency>
 	</dependencies>
 </project>

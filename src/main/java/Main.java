@@ -13,7 +13,7 @@ public class Main
   {
     setUpLookAndFeel();
 
-    final JFrame testFrame = new JFrame("Zulu Test User, (TUser), Test Working Role*The Test Department*");
+    final JFrame testFrame = new JFrame("Zulu Test User, (TUser), Test Working Role*The Orthopedic Department*");
 
     testFrame.setSize(new Dimension(600, 400));
     testFrame.setVisible(true);
